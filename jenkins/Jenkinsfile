@@ -1,4 +1,4 @@
-pipeline {
+spipeline {
     agent any
     stages {
         stage('Build') {
@@ -23,8 +23,8 @@ pipeline {
             }
         }
         stage('Deliver') {
-            steps {
-                sh './scripts/deliver.sh'
+            steps { 
+                sh './jenkins/scripts/deliver.sh'
             }
         }
     }
